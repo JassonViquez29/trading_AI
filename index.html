@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Deriv Synthetic Analyzer</title>
+
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Analizador de Índices Sintéticos - Deriv</h2>
+
+<div id="controls">
+
+<select id="symbol">
+<option value="R_75">Volatility 75</option>
+<option value="R_50">Volatility 50</option>
+<option value="R_100">Volatility 100</option>
+<option value="R_25">Volatility 25</option>
+</select>
+
+<select id="timeframe">
+<option value="60">1 minuto</option>
+<option value="300">5 minutos</option>
+<option value="900">15 minutos</option>
+</select>
+
+<button onclick="start()">Conectar</button>
+
+</div>
+
+<div id="chart"></div>
+
+<div id="analysis"></div>
+
+<div id="chat">
+
+<div id="messages"></div>
+
+<input id="question" placeholder="Pregunta sobre el mercado">
+<button onclick="ask()">Preguntar</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
